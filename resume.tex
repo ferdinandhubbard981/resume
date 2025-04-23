@@ -1,38 +1,52 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry} % Document margins
+\usepackage{amsmath}
+\usepackage[left=0.2in,top=0.2in,right=0.2in,bottom=0.2in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Ferdinand Hubbard} % Your name
-\address{+32 479 820 811 \\ London, UK} 
-\address{\href{mailto:ferdinandhubbard@gmail.com}{ferdinandhubbard@gmail.com} \\ 
-\href{https://www.linkedin.com/in/ferdinand-hubbard/}{linkedin.com/in/ferdinand-hubbard} \\
-\href{https://github.com/ferdinandhubbard981}{github.com/ferdinandhubbard981}}
+\address{
+    +32 479 820 811 \\ 
+    ferdinandhubbard@gmail.com \\ 
+    \href{https://www.linkedin.com/in/ferdinand-hubbard/}{linkedin} \\
+    \href{https://github.com/ferdinandhubbard981}{github}
+    } 
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
 %	PROFESSIONAL SUMMARY
 %----------------------------------------------------------------------------------------
-
-
-I am a motivated, aspiring software developer with a strong academic foundation in computer science and practical experience in backend software development.
-
-
+\vspace{-10pt}
+\begin{center}
+    Nationalities: Belgian, UK Settled Status (right to work) ${\vert}$ Fluent languages: English, French
+\end{center}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
 
-{\bf Bachelor of Science (BSc) Computer Science} \hfill {September 2021 - August 2024} \\
-\textit{University of Bristol} \hfill \textit{Bristol, UK} \\
+{\bf University of Bristol $\boldsymbol{\vert}$ BSc Computer Science} \hfill Bristol, UK $\boldsymbol{\vert}$ 2021 - 2024 \\
 Graduated with a 2:1 \\
 Highlighted units: types and lambda calculus, machine learning (coursework), computer graphics
 
-{\bf A levels} \hfill {September 2016 - June 2021} \\
-\textit{Ampleforth College} \hfill \textit{Yorkshire, UK} \\
+{\bf Ampleforth College $\boldsymbol{\vert}$ A-levels} \hfill Yorkshire, UK $\boldsymbol{\vert}$ 2016 - 2021 \\
 Further mathematics, mathematics, computer science, physics: A*, A*, A*, A
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\textbf{FN Herstal $\boldsymbol{\vert}$ Software Engineering Intern (C\texttt{++})} \hfill Herstal, BE $\boldsymbol{\vert}$ Jun 2023 - Aug 2023 \\
+Designed and implemented a system to calculate the coding-standard-coverage value of a static analysis configuration. It does this by checking the static analyser's output to counter-examples (code snippets) to each rule in the coding standard. This system identified which custom checks should be added to the static analysis configuration, as well as which rules of the coding standard need to be verified by a human during code review. All this information is displayed in an automatically generated web page.
+
+\textbf{University of Bristol $\boldsymbol{\vert}$ Teaching Assistant} \hfill Bristol, UK $\boldsymbol{\vert}$ Sep 2022 - Jun 2023 \\
+Supported first-year students in 'Imperative Programming' and 'Mathematics B' courses, providing in-class mentoring to improve understanding and performance.
 
 \end{rSection}
 
@@ -50,41 +64,25 @@ Further mathematics, mathematics, computer science, physics: A*, A*, A*, A
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Experience}
-
-\textbf{Software Engineering Intern (C\texttt{++})} \hfill June 2023 - August 2023 \\
-\textit{FN Herstal}, Herstal, Belgium \\
-Designed and implemented a system to calculate the coding-standard-coverage value of a static analysis configuration. It does this by checking the static analyser's output to counter-examples (code snippets) to each rule in the coding standard. This system identified which custom checks should be added to the static analysis configuration, as well as which rules of the coding standard need to be verified by a human during code review. All this information is displayed in an automatically generated web page.
-
-\textbf{Teaching Assistant} \hfill September 2022 - June 2023 \\
-\textit{University of Bristol}, Bristol, UK \\
-Supported first-year students in 'Imperative Programming' and 'Mathematics B' courses, providing in-class mentoring to improve understanding and performance.
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
 %	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Projects}
 \vspace{-1.25em}
 
-\item \textbf{Gnucash version control (ASP.NET, C\#, docker)} - \href{https://github.com/ferdinandhubbard981/gnucash-diff}{library repo} - \href{https://github.com/ferdinandhubbard981/gnucash-version-control-web}{web-app repo} \hfill February 2025 - Current \\
+\item \textbf{Gnucash version control (ASP.NET, C\#, docker)} - \href{https://github.com/ferdinandhubbard981/gnucash-diff}{library repo} - \href{https://github.com/ferdinandhubbard981/gnucash-version-control-web}{web-app repo} \hfill Feb 2025 - Current \\
 Developed a .net library to parse and find the diff between two Gnucash files. Also implemented an api and a web-app - \href{https://gnc-diff.ferdinandhubbard.com}{gnc-diff.ferdinandhubbard.com} - to provide a UI for the library. The aim of this project is to provide an interface for version control and collaboration for the popular open-source accounting software Gnucash.
 
-\item \textbf{SPQM Odoo Module: Solar Panel Quote Maker (python)} \hfill October 2024 - November 2024 \\
+\item \textbf{SPQM Odoo Module: Solar Panel Quote Maker (python)} \hfill Oct 2024 - Nov 2024 \\
 Developed a custom Odoo module for a solar panel installation business to streamline quoting. Integrated year-on-year financial projections to showcase ROI of a solar panel installation, improving client conversion rates by 25\%. 
 
 \item \textbf{Games Project (rust)} - \href{https://github.com/Team-Yarg/these\_times\_of\_mine}{git repo} \hfill Jan 2024 - May 2024 \\
 Worked as part of a team of 7 to develop a game for the Nintendo 3DS in Rust, using a customized Bevy game engine.
 
-\item \textbf{RecallAI (Kubernetes, docker, python, typescript)} \hfill May 2023 - September 2023 \\
+\item \textbf{RecallAI (Kubernetes, docker, python, typescript)} \hfill May 2023 - Sep 2023 \\
 Co-developed a webapp that generates flashcards from lectures and videos. It leverages existing ML models to generate a transcript, and then condenses that information into flashcards. The app is hosted in a bare-metal k8s instance, and was developed to be horizontally scalable.
 
-\item \textbf{Composite Design Tools (TypeScript, React)} \hfill September 2022 - May 2023 \\
+\item \textbf{Composite Design Tools (TypeScript, React)} \hfill Sep 2022 - May 2023 \\
 Collaborated with Imperial College London's material science department to create a web-based tool for visualizing and analyzing compressive strength models.
 
 \item \textbf{Pregame Analysis for League of Legends (Python, TensorFlow)} \hfill 2021 \\
