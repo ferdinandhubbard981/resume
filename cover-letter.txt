@@ -1,0 +1,9 @@
+Dear hiring manager,
+
+I recently graduated with a BSc in Computer Science from the University of Bristol and am seeking opportunities in IT and software development. My experience spans backend development, DevOps tools, and full-stack projects, with a strong foundation in C#, Python, and C++. I’m open to any roles where I can contribute and grow—whether in development, infrastructure, or technical support. I'm adaptable, eager to learn, and ready to take on new challenges.
+
+Thank you for your time and consideration.
+
+Best regards,
+Ferdinand Hubbard
+
