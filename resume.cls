@@ -102,6 +102,7 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
+  \vspace{13pt}
   \sectionskip
   \MakeUppercase{{\bf #1}} % Section title
   \sectionlineskip
